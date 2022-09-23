@@ -3,15 +3,23 @@ import { Link } from "react-router-dom";
 const Register = () => {
   return (
     <>
+      <div className="container text-center">
+      <h1>Learner</h1>
+      <div　className="my-5  bg-light border border-dark">
       <h1>新規登録ページ</h1>
-      <div>
-        ログインは<Link to={`/login/`}>こちら</Link>
+        <form>
+          ID<input className="my-5" type="text"/><br/>
+          パスワード<input className="my-3" type="password"/><br/>
+          <input type="button" value="新規登録"　className="my-5"/>
+        </form>
+        <div>
+          ログイン<Link to={`/login/`}>こちら</Link>
+        </div>
       </div>
-      <div>
-        <Link to={`/`}>ホームに戻る</Link>
       </div>
+
     </>
   );
-};
+}
 
 export default Register;
