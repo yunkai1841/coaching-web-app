@@ -1,6 +1,6 @@
 from flask import Blueprint, jsonify, request
 from app.models import articles
-api = Blueprint('article',
+api = Blueprint('comment',
                 __name__,
                 url_prefix='/api/comment')
 @api.route('')
