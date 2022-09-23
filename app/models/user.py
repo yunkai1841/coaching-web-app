@@ -2,15 +2,15 @@ def get(id: int = None):
     data = [
         {
             'id': '1',
-            'password': '山田太郎',
+            'password': '1234',
         },
         {
             'id': '2',
-            'password': '佐藤花子',
+            'password': '2345',
         },
         {
             'id': '3',
-            'password': '鈴木さくら',
+            'password': '3456',
         },
     ]
     if id:
