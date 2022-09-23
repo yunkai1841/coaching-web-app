@@ -213,3 +213,5 @@ db/
 test/
 
 .vscode/
+
+*.db
