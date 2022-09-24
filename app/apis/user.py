@@ -1,5 +1,6 @@
 from flask import Blueprint,render_template
-api = Blueprint('user2',
+from app.models import user
+api = Blueprint('user',
                 __name__,
                 url_prefix='/api/user')
 @api.route('')
