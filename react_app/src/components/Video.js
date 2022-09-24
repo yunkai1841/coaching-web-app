@@ -29,7 +29,7 @@ const Video = () => {
               <video style={{width:'700',height:'500px'}}></video>
             </div>
             <div className="comment" style={{textAlign:'center'}}>
-              <p>コメントコメント<br></br>コメントコメント</p>
+              <p>質問のコメント<br></br>コメントコメント</p>
             </div>
             <div style={{textAlign:'center'}}>
               <div className="Advice mt-5" style={{textAlign:'center'}}>
@@ -37,7 +37,7 @@ const Video = () => {
                 <textarea style={{width:'500px', height:'100px'}} placeholder="アドバイスを入力してください" /><br></br>
                 <input type="submit" name="submit" value="投稿" style={{width:'50px', height:'30px'}}/>
               </div>
-              <div className="mt-5">
+              <div className="mt-5 mb-5">
                 <h4>アドバイス一覧</h4>
                 <p>・アドバイス、アドバイス</p>
               </div>
