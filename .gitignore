@@ -215,3 +215,5 @@ test/
 .vscode/
 
 *.db
+
+*.mp4
