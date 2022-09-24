@@ -6,7 +6,7 @@ const Home = () => {
       <body>
         <header className="d-flex justify-content-around mt-3" style={{borderBottom:'solid',}}>
           <div>
-            <a href="#" style={{textDecoration: 'none', color:'black'}}><h1>Learner</h1></a>
+            <Link to={'/home/'} style={{textDecoration: 'none', color:'black'}}><h1>Learner</h1></Link>
           </div>
           <div>
             <form className="pt-3" action="#" method="post">
