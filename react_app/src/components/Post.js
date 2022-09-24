@@ -23,6 +23,11 @@ function Post() {
       width:'70%',
       height:'400px'
     };
+
+    let tilebox = {
+      width:'40%',
+      height:'50px'      
+    };
   
     return (
       <div  className="text-center">
@@ -38,6 +43,7 @@ function Post() {
           </p>
         </div>
         </div>
+        <input type="text" size="30" className="mx-5 my-4" style={tilebox} placeholder="Title" /><br/>
         <textarea type="text" size="500" className="mx-5 my-5" style={commentbox} placeholder="改善したいポイント" maxlength="1000"/>
       </div>
     );
