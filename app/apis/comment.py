@@ -2,7 +2,7 @@ from flask import Blueprint, jsonify, request
 from app.models import articles
 api = Blueprint('comment',
                 __name__,
-                url_prefix='/api/comment')
+                url_prefix='/apis/comment')
 @api.route('')
 def get_all():
     data = articles.get()
