@@ -1,6 +1,5 @@
 from flask import Blueprint, jsonify, request
 from app.models import videos
-from app.server import app
 
 api = Blueprint('upload',
                 __name__,
@@ -27,8 +26,8 @@ def upload():
     fs = request.files['file']
 
     # 下記のような情報がFileStorageからは取れる
-    app.logger.info('file_name={}'.format(fs.filename))
-    app.logger.info('content_type={} content_length={}, mimetype={}, mimetype_params={}'.format(
+    print('file_name={}'.format(fs.filename))
+    print('content_type={} content_length={}, mimetype={}, mimetype_params={}'.format(
         fs.content_type, fs.content_length, fs.mimetype, fs.mimetype_params))
 
     # ファイルを保存
