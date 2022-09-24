@@ -211,3 +211,7 @@ venv.bak/
 db/
 
 test/
+
+.vscode/
+
+*.db
