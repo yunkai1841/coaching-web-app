@@ -14,22 +14,22 @@ def get_db():
     con.commit()
     return con, cur
 
-def get(name: int = None):
+def get(video_id: int = None):
     con, cur = get_db()
-    if name is None:
+    if video_id is None:
         cur.execute('SELECT * FROM comment')
         rows = cur.fetchall()
         return rows
     else:
-        cur.execute('SELECT * FROM comment WHERE name = ?', (name,))
+        cur.execute('SELECT * FROM comment WHERE name = ?', (video_id,))
         rows = cur.fetchall()
         if rows:
             return rows
         else:
             return []
 
-def post(name:str, path:str):
+def post(video_id:int, comment:str):
     con, cur = get_db()
     cur.execute("INSERT INTO comment (video_id, comment) VALUES (?, ?)",
-     (name, path))
+     (video_id, comment))
     return get()
