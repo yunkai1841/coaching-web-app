@@ -19,12 +19,12 @@ def get(name: str = None):
     if name is None:
         cur.execute('SELECT * FROM videos')
         rows = cur.fetchall()
-        return rows
+        return [dict(zip(["id", "name", "path"],item)) for item in rows]
     else:
         cur.execute('SELECT * FROM videos WHERE name = ?', (name,))
         rows = cur.fetchall()
         if rows:
-            return rows
+            return [dict(zip(["id", "name", "path"],item)) for item in rows]
         else:
             return []
 
