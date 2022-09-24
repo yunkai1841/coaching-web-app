@@ -19,7 +19,8 @@ const Home = (props) => {
           </form>
         </div>
         <div className="pt-3">
-          <Link to={`/register/`} style={{textDecoration: 'none', color:'black'}}>新規登録</Link>・<Link to={`/register/`} style={{textDecoration: 'none', color:'black'}}>ログイン</Link>
+          <Link className="mx-5" style={{textDecoration: 'none', color:'black', border:"1px"}} to={`/post/`}>投稿する</Link>
+          <Link to={`/register/`} style={{textDecoration: 'none', color:'black'}}>新規登録</Link>・<Link to={`/login/`} style={{textDecoration: 'none', color:'black'}}>ログイン</Link>
       </div>
       </header>
       <main>
