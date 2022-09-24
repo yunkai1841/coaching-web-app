@@ -6,7 +6,6 @@ api = Blueprint('videos',
 @api.route('')
 def get_all():
     data = videos.get()
-    print(data)
     return jsonify(data), 200
 
 
