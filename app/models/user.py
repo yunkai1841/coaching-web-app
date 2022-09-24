@@ -20,9 +20,9 @@ def get(id: int = None):
         return {}
     else:
         return data
-def post(password:str):
+def post(password:int):
     print(password)
     return {
         'id': '4',
-        'comment': password,
+        'password': password,
     }
