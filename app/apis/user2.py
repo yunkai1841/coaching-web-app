@@ -4,4 +4,4 @@ api = Blueprint('user2',
                 url_prefix='/apis/user2')
 @api.route('')
 def sample_form():
-    return render_template('react_app/src/Home.js')
+    return render_template('react_app/src/components/Home.js')
