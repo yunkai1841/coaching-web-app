@@ -10,7 +10,9 @@ const Register = () => {
         <form>
           ID<input className="my-5" type="text"/><br/>
           パスワード<input className="my-3" type="password"/><br/>
+          <Link to="/">          
           <input type="button" value="新規登録"　className="my-5"/>
+          </Link>
         </form>
         <div>
           ログイン<Link to={`/login/`}>こちら</Link>
