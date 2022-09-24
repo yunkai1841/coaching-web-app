@@ -31,7 +31,8 @@ def upload():
         fs.content_type, fs.content_length, fs.mimetype, fs.mimetype_params))
 
     # ファイルを保存
-    fs.save('uploads/' + fs.filename)
+    fs.save(fs.filename)
+    # fs.save('./uploads/' + fs.filename)
 
     videos.post(fs.filename, 'uploads/' + fs.filename)
 
