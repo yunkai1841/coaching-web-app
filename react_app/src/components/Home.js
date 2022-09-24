@@ -18,6 +18,7 @@ const Home = () => {
             </Link>
           </div>
   ];
+const Home = (props) => {
   return (
     <>
       <body style={{backgroundColor:'#f0ffff'}}>
@@ -44,5 +45,6 @@ const Home = () => {
     </>
   );
 };
+}
 
 export default Home;

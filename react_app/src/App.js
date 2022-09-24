@@ -4,10 +4,11 @@ import Register from "./components/Register";
 import Login from "./components/Login";
 import Video from "./components/Video";
 import React, { useState } from 'react';
+import Post from "./components/Post";
 
 const App = () => {
   const [loggedInStatus, setLoggedInStatus] = useState("未ログイン")
-  const [user, setUser] = useState("me")
+  const [user, setUser] = useState({})
   return (
     <>
     <BrowserRouter>
@@ -17,6 +18,7 @@ const App = () => {
         <Route path={`/login/`} element={<Login />} />
         <Route path={`/post/`} element={<Login />} />
         <Route path={`/video/`} element={<Video />} />
+        <Route path={`/post/`} element={<Post />} />
 
       </Routes>
     </BrowserRouter>
