@@ -1,6 +1,6 @@
 from flask import Blueprint, jsonify, request
 from app.models import videos
-from server import app
+from app.server import app
 
 api = Blueprint('upload',
                 __name__,
