@@ -1,19 +1,22 @@
 import sqlite3
 dbname = 'videos.db'
 
-con = sqlite3.connect(dbname, isolation_level=None)
-cur = con.cursor()
+def get_db():
+    con = sqlite3.connect(dbname, isolation_level=None)
+    cur = con.cursor()
 
-cur.execute("""
-CREATE TABLE IF NOT EXISTS videos (
-    id INTEGER PRIMARY KEY, 
-    name TEXT, 
-    path TEXT)
-""")
-con.commit()
+    cur.execute("""
+    CREATE TABLE IF NOT EXISTS videos (
+        id INTEGER PRIMARY KEY, 
+        name TEXT, 
+        path TEXT)
+    """)
+    con.commit()
+    return con, cur
 
 def get(name: int = None):
-    if id is None:
+    con, cur = get_db()
+    if name is None:
         cur.execute('SELECT * FROM videos')
         rows = cur.fetchall()
         return rows
@@ -26,6 +29,7 @@ def get(name: int = None):
             return []
 
 def post(name:str, path:str):
+    con, cur = get_db()
     cur.execute("INSERT INTO videos (name, path) VALUES (?, ?)",
      (name, path))
     return get()
