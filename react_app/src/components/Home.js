@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom";
 
 const Home = (props) => {
+
+
+
+
+
   return (
     <>
       <header className="d-flex justify-content-around mt-3" style={{borderBottom:'solid',}}>
