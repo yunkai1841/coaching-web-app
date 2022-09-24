@@ -14,7 +14,7 @@ def get_db():
     con.commit()
     return con, cur
 
-def get(name: int = None):
+def get(name: str = None):
     con, cur = get_db()
     if name is None:
         cur.execute('SELECT * FROM videos')
