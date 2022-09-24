@@ -32,6 +32,7 @@ const Home = () => {
             </form>
           </div>
           <div className="pt-3">
+              <Link to={`/post/`} style={{textDecoration: 'none', color:'black'}} className="me-5">投稿</Link>
               <Link to={`/register/`} style={{textDecoration: 'none', color:'black'}}>新規登録</Link>・<Link to={`/login/`} style={{textDecoration: 'none', color:'black'}}>ログイン</Link>
         </div>
         </header>
