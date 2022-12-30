@@ -14,12 +14,12 @@ const Login = (props) => {
         <form>
           ID<input className="my-5" type="text"/><br/>
           パスワード<input className="my-3" type="password"/><br/>
-          <Link to="/">
+          <Link to="/coaching-web-app/">
           <input type="button" value="ログイン" className="my-5"/>
           </Link>
         </form>
         <div>
-          新規登録は<Link to={`/register/`}>こちら</Link>
+          新規登録は<Link to={`/coaching-web-app/register/`}>こちら</Link>
         </div>
       </div>
       </div>

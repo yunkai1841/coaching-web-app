@@ -6,7 +6,7 @@ const Video = () => {
       <body style={{backgroundColor:'#f0ffff'}}>
         <header className="d-flex justify-content-around pt-3" style={{borderBottom:'solid',}}>
           <div>
-            <Link to={'/'}style={{textDecoration: 'none', color:'black'}}><h1>Learner</h1></Link>
+            <Link to={'/coaching-web-app/'}style={{textDecoration: 'none', color:'black'}}><h1>Learner</h1></Link>
           </div>
           <div>
             <form className="pt-3" action="#" method="post">
@@ -15,7 +15,7 @@ const Video = () => {
             </form>
           </div>
           <div className="pt-3">
-            <Link to={`/register/`} style={{textDecoration: 'none', color:'black'}}>新規登録</Link>・<Link to={`/login/`} style={{textDecoration: 'none', color:'black'}}>ログイン</Link>
+            <Link to={`/coaching-web-app/register/`} style={{textDecoration: 'none', color:'black'}}>新規登録</Link>・<Link to={`/coaching-web-app/login/`} style={{textDecoration: 'none', color:'black'}}>ログイン</Link>
           </div>
         </header>
         <main>
